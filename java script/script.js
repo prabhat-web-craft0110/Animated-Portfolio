@@ -145,3 +145,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', animateProgressBars);
     animateProgressBars(); // Run once on page load
 });
+
+var typed = new Typed('#typed', {
+    strings: ['Front-end Developer...', 'Logo Designer...','Influencer...'],
+    typeSpeed: 50,
+  });
