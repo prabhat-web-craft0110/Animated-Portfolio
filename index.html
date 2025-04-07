@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhat - Web Developer & Logo Designer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Prabhat</span>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switcher">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-sun"></i>
+                </div>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span>Prabhat</span></h1>
+                <div class="typed-text">
+                    <span id="typed"></span>
+                </div>
+                <p class="hero-description">I build beautiful, functional websites and create memorable brand identities through logo design.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="images/profile.jpg" alt="Prabhat - Web Developer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.jpg" alt="Prabhat">
+                </div>
+                <div class="about-text">
+                    <h3>Web Developer & Logo Designer</h3>
+                    <p>I'm a passionate web developer with expertise in front-end technologies and a keen eye for design. With experience in both development and logo design, I bring a unique perspective to creating digital experiences that are both functional and visually appealing.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Name:</span>
+                            <p>Prabhat</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>prabhat.pkr012@gmail.com</p>
+                        </div>
+                        <div class="info-item">
+                            <span>From:</span>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-content">
+                <div class="skills-description">
+                    <p>I've worked with a variety of technologies in web development and design. Here's a breakdown of my technical skills:</p>
+                </div>
+                <div class="skills-progress">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress html"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress css"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress js"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>React</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress react"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Tailwind CSS</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress tailwind"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Bootstrap</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress bootstrap"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">Logo Design</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="images/projects/project1.jpg" alt="E-commerce Website">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>E-commerce Website</h3>
+                        <p>Full-featured online store with React and Node.js</p>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="images/projects/project2.jpg" alt="Portfolio Template">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Portfolio Template</h3>
+                        <p>Responsive portfolio template with animations</p>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-item" data-category="design">
+                    <div class="project-img">
+                        <img src="images/projects/project3.jpg" alt="Brand Logo">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Tech Startup Logo</h3>
+                        <p>Minimalist logo for a technology startup</p>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-item" data-category="design">
+                    <div class="project-img">
+                        <img src="images/projects/project4.jpg" alt="Restaurant Logo">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Restaurant Logo</h3>
+                        <p>Vibrant logo for a fine dining restaurant</p>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="images/projects/project5.jpg" alt="Task Management App">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>Productivity app with drag-and-drop functionality</p>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-img">
+                        <img src="images/projects/project6.jpg" alt="Weather Dashboard">
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather information with API integration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>prabhat.pkr012@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p>+91 7275763741</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Bhadohi,Uttar Pradesh,India.</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/prabhat-web-craft0110"><i class="fab fa-github"></i></a>
+                        <a href="www.linkedin.com/in/prabhat-seth-15079a357"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/PrabhatSet38321"><i class="fab fa-twitter"></i></a>
+                        <!-- <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a> -->
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Prabhat</span>
+                    <p>Web Developer & Logo Designer</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-envelope"></i> prabhat@example.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9876543210</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Prabhat. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script> -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="java script/script.js"></script>
+    <script src="java script/typed.js"></script>
+</body>
+</html>
